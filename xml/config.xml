@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config menu="© Johan Satgé 2011" resize_speed=".4">
+	<weft alpha="0" />
+	<loader radius="40" background="0x000000" blur="250" display_speed=".2" display_delay=".5" hide_speed="1" hide_speed_menu="1" />
+	<parallax smooth="false" inertia="1">
+		<item filename="sky.jpg" amplitude="40" />
+		<item filename="mountain.png" amplitude="60" />
+		<item filename="lake.png" amplitude="90" />
+	</parallax>
+	<main_menu radius="90" shadow_alpha=".5" shadow_radius="10" rotation_step="22" initial_rotation="-60" rotation_amplitude="40" rotation_speed=".6" speed=".25">
+		<title><![CDATA[   JOHAN SATGÉ]]></title>
+		<subtitle><![CDATA[Développeur web<br>&amp;<br>Technical artist]]></subtitle>
+		<items>
+			<item external="false" callback="about" hover_speed=".2" blur_hover="30" blur="20" speed=".25" delay=".1" rotation="-8" padding="6" margin="6" shadow_alpha=".5" shadow_radius="10" inactive_label="à propos" hover_label="qui suis-je" />
+			<item external="false" callback="contact" hover_speed=".2" blur_hover="30" blur="20" speed=".25" delay=".1" rotation="-8" padding="6" margin="6" shadow_alpha=".5" shadow_radius="10" inactive_label="laisser un message" hover_label="par email" />
+			<item external="true" callback="http://www.behance.net/johan-satge" target="_blank" hover_speed=".2" blur_hover="30" blur="20" speed=".25" delay=".1" rotation="-8" padding="6" margin="6" shadow_alpha=".5" shadow_radius="10" inactive_label="portfolio" hover_label="sur behance" />
+			<item external="true" callback="http://www.flickr.com/photos/johan-satge" target="_blank" hover_speed=".2" blur_hover="30" blur="20" speed=".25" delay=".1" rotation="-8" padding="6" margin="6" shadow_alpha=".5" shadow_radius="10" inactive_label="photos" hover_label="sur flickr" />
+			<item external="false" callback="links" hover_speed=".2" blur_hover="30" blur="20" speed=".25" delay=".1" rotation="-8" padding="6" margin="6" submenu_margin="10" shadow_alpha=".5" shadow_radius="10" inactive_label="sur le web" hover_label="des liens">
+				<link target="_blank" url="http://www.facebook.com/johan.satge" label="Facebook" padding="6" blur="40" speed=".25" delay=".1" />
+				<link target="_blank" url="http://fr.linkedin.com/in/jsatge" label="Linkedin" padding="6" margin="6" blur="30" speed=".25" delay=".1" />
+				<link target="_blank" url="http://www.viadeo.com/fr/profile/johan.satge" label="Viadeo" padding="6" blur="40" speed=".25" delay=".1" />
+				<link target="_blank" url="http://www.delicious.com/johansatge" label="Delicious" padding="6" blur="40" speed=".25" delay=".1" />
+				<link target="_blank" url="skype:johan.satge" label="Skype" padding="6" blur="40" speed=".25" delay=".1" />
+				<!--<link target="_blank" url="http://flashpanotool.com" label="Flashpanotool" padding="6" blur="30" speed=".25" delay=".1" />-->
+			</item>
+		</items>
+	</main_menu>
+	<pages>
+		<page id="about" margin="30" section_speed=".4">
+			<section radius="170" shadow_alpha=".5" shadow_radius="10" masked_scale=".8" flip_speed=".5" blur="30">
+				<button>
+					<front rotation="-55" amplitude="25" speed="1" padding="6" margin="6" label="compétences" blur="30" hover_speed=".2" persistence="1" />
+					<back rotation="-55" amplitude="25" speed="1" padding="6" margin="6" label="retour" blur="30" hover_speed=".2" persistence="1" />
+				</button>
+				<title><![CDATA[DEVELOPPEMENT]]></title>
+				<front leading="4"><![CDATA[Passionné par le web dans son aspect<br>technique, j'évolue depuis 2005 dans<br>l’univers du développement de solutions en<br>ligne, avec un intérêt particulier pour<br>l'interactivité.<br>Issu d'une formation technique , j'ai pratiqué le<br>développement front et back-end en tant<br>qu'apprenti et auto-entrepreneur entre<br>2009 et 2011.<br>Je suis à présent en poste à<br>l'agence tequilarapido., à<br>Nice.]]></front>
+				<back leading="4"><![CDATA[<font color="#3d3d3d">mysql javascript html </font>php<font color="#3d3d3d"> as3 css html<br>as3 javascript mysql html css php as3<br>javascript </font>as3<font color="#3d3d3d"> css mysql php css javascript<br>html as3 mysql javascript html php as3 css<br>as3  html mysql html css </font>javascript<font color="#3d3d3d"> php as3<br>javascript html css mysql php css javascript<br>html as3 </font>mysql<font color="#3d3d3d"> javascript html php as3 css<br>html as3 javascript mysql </font>html<font color="#3d3d3d"> css php as3<br>javascript html css mysql php css html<br>as3 </font>css<font color="#3d3d3d"> javascript html php as3<br>css html as3 javascript<br>mysql</font>]]></back>
+			</section>
+			<section radius="170" shadow_alpha=".5" shadow_radius="10" masked_scale=".8" flip_speed=".5" blur="30">
+				<button>
+					<front rotation="-60" amplitude="25" speed="1" padding="6" margin="6" label="compétences" blur="30" hover_speed=".2" persistence="1" />
+					<back rotation="-60" amplitude="25" speed="1" padding="6" margin="6" label="retour" blur="30" hover_speed=".2" persistence="1" />
+				</button>
+				<title><![CDATA[GRAPHISME 3D]]></title>
+				<front leading="4"><![CDATA[Parallèlement à mon parcours de<br>développeur, je m'intéresse à l'univers de<br>l'image de synthèse, avec une préférence pour<br>la 3D réaliste.<br><br>Utilisateur autodidacte de Cinema4D depuis<br>2006, j'ai choisi en 2009 de perfectionner mes<br>connaissances en suivant une formation<br>d'un an focalisée sur la production de<br>films d'animation.]]></front>
+				<back leading="4"><![CDATA[<font color="#333333">éclairage </font>modélisation<font color="#333333"> rendu<br>post-production éclairage rendu </font>dépliage<font color="#333333"><br>éclairage texturing post-production rendu<br></font>texturing<font color="#333333"> éclairage modélisation rendu<br>texturing modélisation post-production rendu<br>modélisation </font>éclairage<font color="#333333"> post-production<br>éclairage rendu dépliage éclairage texturing<br>post-production </font>rendu<font color="#333333"> modélisation<br>éclairage modélisation rendu texturing<br></font>post-production<font color="#333333"> modélisation<br>éclairage modélisation<br>rendu</font>]]></back>
+			</section>
+			<section radius="170" shadow_alpha=".5" shadow_radius="10" masked_scale=".8" blur="50">
+				<button>
+					<front rotation="-55" amplitude="25" speed="1" padding="6" margin="6" label="retour au menu" blur="30" hover_speed=".2" persistence=".5" />
+				</button>
+				<title><![CDATA[ET APRES]]></title>
+				<front leading="6"><![CDATA[J’aime: <font color="#333333">montagne dessin </font>la photo<br><font color="#333333">cinéma art numérique montagne photo<br>cinéma art numérique </font>le dessin<font color="#333333"> cinéma photo<br>montagne dessin numérique photo art<br>numérique </font>le cinéma<font color="#333333"> photo montagne cinéma<br>montagne dessin photo cinéma art numérique<br>montagne photo cinéma </font>l’art numérique<br><font color="#333333">dessin cinéma photo montagne dessin<br>numérique photo art numérique <br></font>la montagne<font color="#333333"> photo dessin<br>dessin montagne]]></front>
+			</section>
+		</page>
+		<page id="contact" blur="100" shadow_alpha=".5" shadow_radius="10" form="/?contact" method="POST" display_speed=".5" display_amplitude="40" msg_speed=".3">
+			<title><![CDATA[CONTACT]]></title>
+			<labels>
+				<label object="introLabel"><![CDATA[N’hésitez pas à me laisser un message pour toute question ou remarque, ou si vous êtes intéressé par mon travail. Je vous enverrai une réponse dans un délai de 48h.<br>Merci!]]></label>
+				<label object="nameLabel"><![CDATA[Nom*]]></label>
+				<label object="mailLabel"><![CDATA[Mail]]></label>
+				<label object="messageLabel"><![CDATA[Message*]]></label>
+				<label object="infosLabel"><![CDATA[<font color="#5f5f5f">email.</font>    <a href="mailto:contact{at}johansatge{dot}fr">contact{at}johansatge{dot}fr</a><br><font color="#5f5f5f">tél.</font>         (+33) 6 28 78 10 99<br><font color="#5f5f5f">local.</font>     Nice, France]]></label>
+			</labels>
+			<dialogs>
+				<dialog id="REQUIRED_FIELD_MISSING"><![CDATA[Veuillez remplir tous les champs]]></dialog>
+				<dialog id="NO_FIELDS_FOUND"><![CDATA[Une erreur est survenue]]></dialog>
+				<dialog id="MAIL_ERROR"><![CDATA[Une erreur est survenue]]></dialog>
+				<dialog id="MAIL_OK"><![CDATA[Votre message a été envoyé]]></dialog>
+			</dialogs>
+		</page>
+	</pages>
+</config>

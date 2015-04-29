@@ -1,0 +1,4 @@
+body { font-family: "Georgia" , "Time" , "Serif"; font-style: italic; color: #ffffff; font-size: 12px; line-height: 18px; background: #000000; }
+a , img , a img { border: 0; outline: none; }
+a , a:visited { color: #ffffff; text-decoration: underline; }
+a:hover { text-decoration: none; }
