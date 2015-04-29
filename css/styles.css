@@ -1,0 +1,8 @@
+html , body , div , p , h1 , h2 , form , fieldset , input { margin: 0; padding: 0; border: 0; }
+html { margin-top: 20px; margin-left: 10px; font-family: "Georgia" , "Times"; color: #707070; background: #ffffff; }
+h1 { width: 128px; height: 24px; background: url(../img/title.png) no-repeat top left; background-size: 128px; height: 24px; }
+h2 { font-size: 12px; font-weight: normal; font-style: italic; }
+a.orange , a.orange:visited { color: #d7654d; text-decoration: none; }
+a.blue , a.blue:visited { color: #7bc1cc; text-decoration: none; }
+a.orange:hover , a.blue:hover { color: #000000; text-decoration: none; }
+p { margin-top: 20px; font-size: 11px; line-height: 15px; font-style: italic; }
