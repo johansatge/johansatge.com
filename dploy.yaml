@@ -1,0 +1,11 @@
+ocean:
+    scheme: "sftp"
+    host: "johansatge.com"
+    user: "johan"
+    check: false
+    path:
+        remote: "/var/www/johansatge.com"
+    privateKey: "~/.ssh/digital_ocean_johan"
+    publicKey: "~/.ssh/digital_ocean_johan.pub"
+    branch: "master"
+    exclude: ["config.codekit", "assets/sass/**/*", "dploy.yaml", "readme.md"]
