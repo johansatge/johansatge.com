@@ -1,120 +1,120 @@
 html, body, div, h1, h2, a, span
 {
-    margin  : 0;
-    padding : 0;
-    border  : 0;
-    outline : 0;
+  margin  : 0;
+  padding : 0;
+  border  : 0;
+  outline : 0;
 }
 
 html
 {
-    background              : #000000 url(images/background.jpg) no-repeat bottom center;
-    background-size         : cover;
-    min-height              : 100%;
-    -webkit-font-smoothing  : antialiased;
-    -moz-osx-font-smoothing : grayscale;
+  background              : #000000 url(background.jpg) no-repeat bottom center;
+  background-size         : cover;
+  min-height              : 100%;
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
 }
 
 .main
 {
-    position : relative;
-    z-index  : 2;
-    width    : 450px;
-    margin   : 50px 60px 50px 60px;
+  position : relative;
+  z-index  : 2;
+  width    : 450px;
+  margin   : 50px 60px 50px 60px;
 
-    @media screen and (max-width : 520px) {
-        width  : auto;
-        margin : 20px 30px 20px 30px;
-    }
+  @media screen and (max-width : 520px) {
+    width  : auto;
+    margin : 20px 30px 20px 30px;
+  }
 
 }
 
 h1
 {
-    position    : relative;
-    z-index     : 2;
-    font-family : Patua One, Arial, sans-serif;
-    font-weight : 400;
-    color       : #ffffff;
-    font-size   : 46px;
-    margin      : 0 0 40px 0;
+  position    : relative;
+  z-index     : 2;
+  font-family : Patua One, Arial, sans-serif;
+  font-weight : 400;
+  color       : #ffffff;
+  font-size   : 46px;
+  margin      : 0 0 40px 0;
 
-    &:after
-    {
-        display    : block;
-        content    : ' ';
-        position   : absolute;
-        bottom     : -20px;
-        left       : 0;
-        width      : 150px;
-        height     : 2px;
-        background : #ffffff;
-    }
+  &:after
+  {
+    display    : block;
+    content    : ' ';
+    position   : absolute;
+    bottom     : -20px;
+    left       : 0;
+    width      : 150px;
+    height     : 2px;
+    background : #ffffff;
+  }
 }
 
 h2
 {
-    position    : relative;
-    z-index     : 2;
-    font-family : Lato, Arial, sans-serif;
-    font-weight : 400;
-    color       : #ffffff;
-    font-size   : 17px;
-    line-height : 26px;
-    margin      : 0 0 40px 0;
+  position    : relative;
+  z-index     : 2;
+  font-family : Lato, Arial, sans-serif;
+  font-weight : 400;
+  color       : #ffffff;
+  font-size   : 17px;
+  line-height : 26px;
+  margin      : 0 0 40px 0;
 }
 
 a,
 a:visited
 {
-    position        : relative;
-    display         : block;
-    width           : 100%;
-    font-size       : 16px;
-    color           : #ffffff;
-    font-family     : Lato, Arial, sans-serif;
-    font-weight     : 700;
-    text-decoration : none;
-    margin          : 0 0 14px 0;
-    transition      : color 150ms;
+  position        : relative;
+  display         : block;
+  width           : 100%;
+  font-size       : 16px;
+  color           : #ffffff;
+  font-family     : Lato, Arial, sans-serif;
+  font-weight     : 700;
+  text-decoration : none;
+  margin          : 0 0 14px 0;
+  transition      : color 150ms;
 
-    &:hover
-    {
-        color : #d4352b;
-
-        .fa
-        {
-            opacity : 1;
-            color   : #ffffff;
-            left    : -40px;
-        }
-
-        span
-        {
-            color : #cccccc;
-        }
-    }
+  &:hover
+  {
+    color : #d4352b;
 
     .fa
     {
-        position   : absolute;
-        top        : 9px;
-        left       : -60px;
-        font-size  : 22px;
-        opacity    : 0;
-        transition : opacity 150ms, left 150ms;
-
-        @media screen and (max-width : 520px) {
-            display : none;
-        }
+      opacity : 1;
+      color   : #ffffff;
+      left    : -40px;
     }
 
     span
     {
-        font-size   : 14px;
-        margin      : 4px 0 0 0;
-        display     : block;
-        color       : #cccccc;
-        font-weight : 400;
+      color : #cccccc;
     }
+  }
+
+  .fa
+  {
+    position   : absolute;
+    top        : 9px;
+    left       : -60px;
+    font-size  : 22px;
+    opacity    : 0;
+    transition : opacity 150ms, left 150ms;
+
+    @media screen and (max-width : 520px) {
+      display : none;
+    }
+  }
+
+  span
+  {
+    font-size   : 14px;
+    margin      : 4px 0 0 0;
+    display     : block;
+    color       : #cccccc;
+    font-weight : 400;
+  }
 }

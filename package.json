@@ -1,0 +1,17 @@
+{
+  "name": "johansatge.com",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "deploy:assets": "s3cmd sync ./dist/ s3://johansatge.com/ --recursive --delete-removed --exclude=.DS_Store --exclude=index.html --add-header='Cache-Control: max-age=2592000, public'",
+    "deploy:index": "s3cmd sync ./dist/index.html s3://johansatge.com/ --cf-invalidate --cf-invalidate-default-index --add-header='Cache-Control: max-age=600, public'",
+    "deploy": "node build.js && npm run deploy:assets && npm run deploy:index"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "html-minifier": "^3.4.2",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.5.2",
+    "rimraf": "^2.6.1"
+  }
+}
