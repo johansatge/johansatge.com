@@ -3,9 +3,7 @@
   "private": true,
   "scripts": {
     "build": "node build.js",
-    "deploy:assets": "s3cmd sync ./dist/ s3://johansatge.com/ --recursive --delete-removed --exclude=.DS_Store --exclude=index.html --add-header='Cache-Control: max-age=2592000, public'",
-    "deploy:index": "s3cmd sync ./dist/index.html s3://johansatge.com/ --cf-invalidate --cf-invalidate-default-index --add-header='Cache-Control: max-age=600, public'",
-    "deploy": "node build.js && npm run deploy:assets && npm run deploy:index"
+    "deploy": "npm run build && rsync --archive --checksum --verbose --chmod=u=rwX,g=rX --exclude=.DS_Store dist/ $(head -n 1 .cdn)"
   },
   "dependencies": {
     "ejs": "^2.5.6",
