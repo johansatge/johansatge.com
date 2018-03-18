@@ -2,14 +2,13 @@
   "name": "johansatge.com",
   "private": true,
   "scripts": {
-    "build": "node build.js",
-    "deploy": "npm run build && rsync --archive --checksum --verbose --chmod=u=rwX,g=rX --exclude=.DS_Store dist/ $(head -n 1 .cdn)"
+    "build": "node build.js"
   },
   "dependencies": {
-    "ejs": "^2.5.6",
-    "html-minifier": "^3.4.2",
+    "ejs": "^2.5.7",
+    "html-minifier": "^3.5.11",
     "ncp": "^2.0.0",
-    "node-sass": "^4.5.2",
-    "rimraf": "^2.6.1"
+    "node-sass": "^4.7.2",
+    "rimraf": "^2.6.2"
   }
 }
